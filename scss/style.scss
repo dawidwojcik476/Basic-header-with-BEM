@@ -1,0 +1,20 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./mainbanner";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+
+}
+
+.container {
+    overflow-x: hidden;
+}

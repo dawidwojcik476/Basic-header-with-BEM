@@ -1,0 +1,40 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    padding: 0 5vw;
+    background-color: $secondary-color;
+
+    @include desktop {
+        height: 84px;
+        width: 50vw;
+        justify-content: space-around;
+    }
+
+
+
+    &__logo {
+        display: none;
+        height: 35px;
+
+        &--primary {
+            display: block;
+        }
+
+        @include tablet {
+            display: block;
+
+            &--primary {
+                display: none;
+            }
+        }
+
+        @include desktop {
+            height: 38px;
+        }
+
+    }
+}
